@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-left: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.logo {
+            border: 2px solid hsl(0, 67%, 99%);
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+             font-size:20px;
+        }
+        .welcome-message {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #555;
+        }
+   .image1{
+    border: 2px solid hsl(0, 17%, 98%);
+            height: 1500px;
+             
+            overflow: hidden;
+            position: relative;
+   }
+   .image1 img {
+            width:100%;
+            height:100%;
+            object-fit: cover; /* Ensures the image covers the container */
+        }
+        .box{
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust for exact centering */
+            background-color:whitesmoke;
+            color: rgb(15, 14, 14); /* Text color */
+            padding: 100px;
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center text */
+        }
+        .box:hover{
+           background-color: #cd1b45;
+        }
+        .subscribe {
+            position: absolute;
+            top: 60%; /* Position below the overlay */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust for exact centering */
+            background-color: rgba(255, 0, 0, 0.7); /* Different background color */
+            color: white; /* Text color */
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center text */
+        }
+       .subscribe:hover{
+        color:#0c0c0c;
+       }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box1 {
+    flex: 1;
+    margin-right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.like-button:hover, .buy-now:hover {
+    background-color: #218838;
+}
+
+.replies {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.replies:hover {
+    background-color: #0056b3;
+}
+.product-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   padding-top:50px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height:400px;
+}
+.product img{
+    height:280px;
+    width:400px;
+}
+
+
+
+.c{
+    display: flex;
+    width: 100%; /* Adjust based on your needs */
+   height:500px;
+     background-image:url(/ad7.jpeg\ image.jpg); /* Light background for contrast */
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: hsl(0, 0%, 7%);
+}
+
+.cont {
+    flex: 1; /* Takes up remaining space on the left */
+    padding: 20px; /* Add some padding */
+    color:white;
+    font-size:40px;
+}
+.cont h2{
+    color:white;
+    font-size:40px;
+}
+.cont p{
+    font-size:25px;
+}
+.b{
+    display: flex;
+    flex-direction:row; /* Stack boxes vertically */
+    gap: 20px; /* Space between boxes */
+    padding-top:50px;
+    padding-right:20px;
+}
+
+.b1 {
+    width: 250px;
+    height: 350px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:goldenrod;
+    overflow: hidden; /* To hide overflow of images */
+    border-style:solid;
+}
+
+.b1 img {
+    width:100%; /* Make images responsive */
+    height:100px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the box area without stretching */
+}
+
+.outer-box {
+            border: 2px solid hsl(0, 33%, 98%);
+            width:100%;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            height:500px;
+            
+        }
+
+        .content {
+            flex: 1;
+            margin-right: 20px;
+            font-size:25px;
+            padding-left:80px;
+        }
+        .inner-box {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f8ff;
+            padding-top:30px;
+            padding-right:50px;
+           
+        }
+        .inner-box img{
+            width:100%;
+            object-fit: cover;
+        }
+        .inner-box img:hover{
+            transform: scale(0.8);
+        }
+       
+        
+
+       </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Header</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            
+            <nav>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="logo">
+            <h1>Fashion Store</h1>
+            <div class="welcome-message">Welcome to the Fashion World!</div>
+        </div>
+        <div class="image1">
+            <img src="ad1.jpeg image.jpg">
+            <div class="box">
+                <h1>explore new things</h1>
+                <div class="subscribe">Subscribe</div>
+            </div>
+        </div></body>
+        
+    <div class="container">
+        <div class="box1">
+            <h1>Stylish</h1>
+            <h2>New Arrivals Collection</h2>
+            <img src="/pic2.webp file.webp" alt="Stylish Dress">
+            <p>Wearing a stylish dress is more than just a fashion statement; it’s an expression of individuality and confidence. The moment I slipped into the dress, I felt an instant boost in my mood. The fabric was soft yet structured, hugging my curves perfectly while allowing for comfortable movement. One of the most delightful aspects of this dress was its comfort. As I twirled and moved, I appreciated how it flowed with me, rather than constricting my movements. The adjustable straps and fitted waist allowed for a customized fit, ensuring I felt both stylish and at ease throughout the day.</p>
+            <button id="likeButton" class="like-button"><i class="fas fa-thumbs-up"></i> Like</button>
+            <button id="replies" class="replies">Replies</button>
+        </div>
+        <div class="product-container">
+            <div class="product">
+                <img src="/off.jpeg image.jpg">
+                <h2>offers</h2>
+                <p>"Every great outfit begins with the thrill of a shopping adventure."</p>
+                <button class="buy-now">visit</button>
+            </div>
+            <div class="product">
+                <img src="pic3.jpeg image.jpeg">
+                <h2>Discount</h2>
+                <p>"Every discount is an opportunity wrapped in a price tag."</p>
+                <button class="buy-now">visit</button>
+            </div></div></div>
+            <div class="c">
+                <div class="cont">
+                    <h2>gorgeous</h2>
+                    <p>Welcome to our exclusive collection of makeup products designed to enhance your natural beauty. Whether you are a makeup novice or a seasoned pro, we have something for everyone!</p>
+                </div>
+                <div class="b">
+                 <marquee><div class="b1"><img src="ad2.jpeg image.jpg" alt="Image 1"></div></marquee>
+               <marquee><div class="b1"><img src="ad3.jpeg image.jpg" alt="Image 2"></div></marquee>
+               <marquee><div class="b1"><img src="ad4.jpeg image.jpg" alt="Image 3"></div></marquee>
+              
+                </div>
+            </div>
+            <div class="outer-box">
+                <div class="content">
+                    <h2>Estimated Delivery Dates</h2>
+                    <p>Accurate delivery estimates can make a world of difference for shoppers. It enables them to make better purchase decisions. ClickPost’s AI-driven EDD feature takes note of carrier performance and the difficulty of reaching a location. In this way, it’s always able to calculate EDDs correctly. 
+
+                        The ClickPost EDD is here to give your shoppers the much-needed peace of mind. Talk to us.</p>
+                </div>
+                <div class="inner-box">
+                    <img src="/del.png image.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+           <head>
+                <title>Product Collection</title>
+                <style>
+                
+            
+                    .coll {
+                        display: flex;
+                        border: 2px solid #f6f4f4;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        width:100%;
+                        background-color: hsl(0, 0%, 3%);
+                       
+                        height:500px;
+                    }
+            
+                    .col {
+                        padding: 20px;
+                        flex: 1;
+                        background-color: hsl(240, 40%, 98%); /* Light blue background */
+                        background-image:url(/bac.jpeg\ image.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+            
+                    .col h2 {
+                        font-size: 50px;
+                        font-weight: bold;
+                        margin: 0 0 20px;
+                    }
+            
+                    .details {
+                        margin-top: 20px;
+                        font-size:30px;
+                    }
+            
+                    .buy-button {
+                        background-color: #777477;
+                        color: white;
+                        border: none;
+                        padding: 10px 15px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
+            
+                    .im{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        justify-content: center;
+                        width: 300px; /* Fixed width for the image section */
+                    }
+            
+                    .im-row {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                    }
+            
+                    .im-box {
+                        height:200px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        width: 100%; 
+                    }
+          
+                    .im-box img {
+                        width: 100%;
+                        height: auto;
+                        }
+                        .im-box img:hover{
+                            transform: translateX(50px); /* Move right by 100px */
+                            
+                        }
+
+                </style>
+            </head>
+            <body>
+            
+            <div class="coll">
+                <div class="col">
+                    <h2>Collections</h2>
+                    <div class="details">
+                        <p><strong>Price:</strong> $29.99</p>
+                        <p><strong>Fabric:</strong> luxurious fabric with a rich texture</p>
+                        <button class="buy-button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="im">
+                    <div class="im-row">
+                        <div class="im-box">
+                            <img src="p1.webp file.webp" alt="Product 1">
+                        </div>
+                        <div class="im-box">
+                            <img src="p2.webp file.webp" alt="Product 2">
+                        </div>
+                    </div>
+                    <div class="im-row">
+                        <div class="im-box">
+                            <img src="p3.webp file.webp" alt="Product 3">
+                        </div>
+                        <div class="im-box">
+                            <img src="1.webp file.webp" alt="Product 4">
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+           
+<head>
+<style>
+       
+
+        .men {
+            
+            height:400px;
+            border: 2px solid hsl(0, 33%, 97%);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: hsl(200, 43%, 99%);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap:2px;
+        }
+
+        .product-box {
+            
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height:300px;
+            width:200px
+        }
+
+        .product-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-box img {
+    
+            height:100px;;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            background-color: hsl(0, 66%, 51%);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #31306e;
+        }
+
+        .price, .fabric {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="men">
+    <div class="title">Men's Shopping</div>
+    <div class="products">
+        <div class="product-box">
+            <img src="/m1.webp file.webp">
+            <p class="price"><strong>Price:</strong> $29.99</p>
+            <p class="fabric"><strong>Fabric:</strong> 100% Cotton</p>
+            <button class="buy-button">min.55% off</button>
+        </div>
+        <div class="product-box">
+            <img src="m2.webp file.webp">
+            <p class="price"><strong>Price:</strong> $39.99</p>
+            <p class="fabric"><strong>Fabric:</strong> 100% Linen</p>
+            <button class="buy-button">min.20% off</button>
+        </div>
+        <div class="product-box">
+            <img src="m3.webp file.webp">
+            <p class="price"><strong>Price:</strong> $49.99</p>
+            <p class="fabric"><strong>Fabric:</strong> 100% Wool</p>
+            <button class="buy-button">20% discount</button>
+        </div>
+        <div class="product-box">
+            <img src="m4.webp file.webp" >
+            <p class="price"><strong>Price:</strong> $59.99</p>
+            <p class="fabric"><strong>Fabric:</strong> 100% Polyester</p>
+            <button class="buy-button">5% 0ff</button>
+        </div>
+        <div class="product-box">
+            <img src="m5.webp file.webp">
+            <p class="price"><strong>Price:</strong> $69.99</p>
+            <p class="fabric"><strong>Fabric:</strong> 100% Rayon</p>
+            <button class="buy-button">15% discount</button>
+        </div>
+    </div>
+</div>
+<head>
+    <style>
+        .ou-box,.men,.out-box{
+            margin:15px;
+        }
+      .ou-box {
+    height:400px;
+    border: 2px solid #f6f5ef;
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgb(243, 249, 250); /* Background color */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the box */
+    overflow: hidden; /* Prevent overflow */
+}  
+
+   
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:200px;
+    padding-top:30px;
+}
+
+.step {
+    border: 2px solid rgb(241, 241, 1);
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.step h2 {
+    margin: 0 0 10px;
+}
+
+.step img {
+    width: 100%;
+    height:200px;
+    max-width: 150px; /* Adjust as needed */
+    transition: transform 0.5s;
+
+}
+
+.step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step:hover img {
+    transform: rotate(360deg); 
+}
+.footwear-heading {
+    text-align: center; /* Center align heading */
+    font-size:25px; /* Font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: #e47777; /* Dark color for text */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+</style>
+</head>
+    
+<body>
+    <div class="ou-box">
+        <h1 class="footwear-heading">"Footwear is not just a fashion statement; it's a journey waiting to be walked."
+
+        </h1>
+    <div class="steps-container">
+        <div class="step">
+            <h2>Sneakers</h2>
+            <img src="s1.webp file.webp" alt="Sneakers">
+        </div>
+        <div class="step">
+            <h2>Heels</h2>
+            <img src="s2.webp file.webp" alt="Heels">
+        </div>
+        <div class="step">
+            <h2>Boots</h2>
+            <img src="s3.webp file.webp" alt="Boots">
+        </div>
+        <div class="step">
+            <h2>Sandals</h2>
+            <img src="s4.webp file.webp" alt="Sandals">
+        </div>
+        <div class="step">
+            <h2>Loafers</h2>
+            <img src="s5.webp file.webp" alt="Loafers">
+        </div></div>
+      
+    </div>
+</div>
+<head>
+    <style>
+     .out-box {
+    display: flex;
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.in-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.shoe-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.accessories-content {
+    width: 50%;
+    padding: 20px;
+    font-size:30px;
+}
+
+.accessories h2 {
+    margin-top: 0;
+
+}
+
+.accessory-image {
+    width: 70px; /* Adjust size as needed */
+    margin: 5px;
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+
+    <div class="out-box">
+        <div class="in-box">
+            <img src="acc.jpeg image.jpg" alt="Footwear" class="shoe-image">
+        </div>
+        <div class="accessories-content">
+            <h2>Accessorize Your Style</h2>
+            <p>Elevate your look with accessories pieces!</p>
+            <div class="accessories">
+                <img src="sm1.avif file.avif" alt="Belt" class="accessory-image">
+                <img src="sm2.avif file.avif" alt="Bag" class="accessory-image">
+                <img src="sm3.jpeg image.jpg" alt="Socks" class="accessory-image">
+                <img src="sm5.jpeg image.jpg" alt="Jewelry" class="accessory-image">
+            </div>
+        </div></div>
+        <head>
+            <style>
+             .new{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.new1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.newbox {
+    flex: 1;
+    background: linear-gradient(135deg, #ffe9e9, #f0c6c6);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.newbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.new3 {
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.new3:hover {
+    transform: scale(1.05);
+}
+
+.new3 img {
+    width: 100%;
+    height:200px;
+    border-bottom: 2px solid #f0c6c6;
+}
+
+.new3 p {
+    padding: 10px;
+    font-weight: bold;
+    color: #555;
+}  
+ </style>
+               </head>
+        <div class="new">
+            <h2>Exciting Offers</h2>
+            <div class="new1">
+                <div class="newbox">
+                    <div class="new3">
+                        <img src="new.jpeg image.jpg" >
+                        <p>upto 50% off home decor</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new1.jpeg image.jpg" alt="Offer 2">
+                        <p>upto 70% off accessories</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new3.webp file.webp" alt="Offer 3">
+                        <p>upto 50% off home furniture</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new4.jpeg image.jpg" alt="Offer 4">
+                        <p>upto 60% off electronic accessories</p>
+                    </div>
+                </div>
+                <div class="newbox">
+                    <div class="new3">
+                        <img src="new5.jpeg image.jpg" alt="Offer 5">
+                        <p>T-shirts</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new6.jpeg image.jpg" alt="Offer 6">
+                        <p>casual wear</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new7.jpeg image.jpg" alt="Offer 7">
+                        <p>suits</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new8.webp file.webp" alt="Offer 8">
+                        <p>classical jeans</p>
+                    </div>
+                </div>
+                <div class="newbox">
+                    <div class="new3">
+                        <img src="new9.jpeg image.jpg" alt="Offer 5">
+                        <p>kitchen products</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new10.jpeg image.jpg" alt="Offer 6">
+                        <p>body spray</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new11.webp file.webp" alt="Offer 7">
+                        <p>bags</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new12.jpeg image.jpg" alt="Offer 8">
+                        <p>Handcrafted items from artisans</p>
+                    </div>
+                </div>
+                <div class="newbox">
+                    <div class="new3">
+                        <img src="new13.webp file.webp" alt="Offer 13">
+                        <p>women kurtis</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new14.webp file.webp" alt="Offer 14">
+                        <p>t-shirts</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new15.webp file.webp" alt="Offer 15">
+                        <p>traditional wear</p>
+                    </div>
+                    <div class="new3">
+                        <img src="new16.webp file.webp" alt="Offer 16">
+                        <p>modern sarees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<head>
+   <style>
+    
+.containers {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.feature {
+    background-color: #e7f3fe;
+    border-left: 5px solid #2196F3;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.feature h2 {
+    margin: 0;
+    color: #2196F3;
+}
+
+.feature p {
+    color: #555;
+}
+
+   </style>
+</head>
+<body>
+    <div class="containers">
+        <h1>Welcome to Our Store</h1>
+        
+        <div class="feature">
+            <h2>Easy Exchange & Return</h2>
+            <p>Enjoy hassle-free exchanges and returns for a stress-free shopping experience.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Secure Payment</h2>
+            <p>Your payment information is safe with us. Shop with confidence!</p>
+        </div>
+
+        <div class="feature">
+            <h2>Express Pickup</h2>
+            <p>Pick up your orders at your convenience with our express pickup service.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Stores Near You</h2>
+            <p>Find our stores close to you for easy access to all your favorite products.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Authentic Products</h2>
+            <p>We guarantee 100% genuine products for your satisfaction.</p>
+        </div>
+    </div>
+    <head>
+        <style>
+.containe {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product22 {
+    margin: 15px;
+    text-align: center;
+    animation: rotate 2s linear infinite; 
+}
+
+.product-image {
+    width: 100px;  /* Size of the circle */
+    height: 100px; /* Size of the circle */
+    border-radius:100%;
+    object-fit: cover;
+    border: 2px solid #2196F3; /* Optional border */
+}
+
+.product p {
+    margin-top: 8px;
+    color: #555;
+}
+
+
+
+        </style>
+    </head>
+<body>
+    <div class="containe">
+        <h1>Some More Products</h1>
+        <div class="product-circles">
+            <div class="product22">
+                <img src="o1.jpeg image.jpg" alt="Perfume" class="product-image">
+                <p>Perfume</p>
+            </div>
+            <div class="product22">
+                <img src="o2.jpeg image.jpg" alt="Watches" class="product-image">
+                <p>Watches</p>
+            </div>
+            <div class="product22">
+                <img src="o3.jpeg image.jpg" alt="Sunglasses" class="product-image">
+                <p>Sunglasses</p>
+            </div>
+            <div class="product22">
+                <img src="o4.jpeg image.jpg" alt="Grooming" class="product-image">
+                <p>Grooming</p>
+            </div>
+            <div class="product22">
+                <img src="sm4.jpeg" alt="Jewellery" class="product-image">
+                <p>Jewellery</p>
+            </div>
+            <div class="product22">
+                <img src="o5.jpeg image.jpg" alt="Belts" class="product-image">
+                <p>Belts</p>
+            </div>
+            <div class="product22">
+                <img src="o6.jpeg image.jpg" alt="Wallets" class="product-image">
+                <p>Wallets</p>
+            </div>
+            
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+.contain {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+.brand-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand-box {
+    background-color: #fff;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 180px; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brand-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.brand-box h3 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+   </style>
+</head>
+<body>
+    <div class="contain">
+        <h1>Top Brands for Your Look</h1>
+        <div class="brand-boxes">
+            <div class="brand-box">
+                <img src="g1.avif file.avif"  class="brand-image">
+                <h3>Brand 1</h3>
+            </div>
+            <div class="brand-box">
+                <img src="g2.avif file.avif"  class="brand-image">
+                <h3>Brand 2</h3>
+            </div>
+            <div class="brand-box">
+                <img src="g3.avif file.avif"  class="brand-image">
+                <h3>Brand 3</h3>
+            </div>
+            <div class="brand-box">
+                <img src="g4.avif file.avif" class="brand-image">
+                <h3>Brand 4</h3>
+            </div>
+            <div class="brand-box">
+                <img src="g5.avif file.avif" class="brand-image">
+                <h3>Brand 5</h3>
+            </div>
+        </div>
+    </div>
+<head>
+    <style>
+       .conta {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px 0;
+    color: #333;
+}
+
+.payment-methods, .app-store-boxes, .verified-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-box, .app-box, .email-box {
+    background-color: #fff;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-box:hover, .app-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.email-box {
+    background-color: #e7f3fe;
+    color: #2196F3;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px auto;
+    width:300px;
+}
+
+.verified-box {
+    width: 80px; /* Adjust size as needed */
+    margin: 10px;
+}
+
+.verified-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.verified-box img:hover {
+    transform: scale(1.1);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="conta">
+        <h1>Secure Payment Options</h1>
+        <div class="payment-methods">
+            <div class="payment-box">Visa</div>
+            <div class="payment-box">MasterCard</div>
+            <div class="payment-box">American Express</div>
+            <div class="payment-box">Rupay</div>
+        </div>
+
+        <h1>Reach Out to Us</h1>
+        <p>For any queries, please write to us:</p>
+        <div class="email-box">customercare@shoppersstop.com</div>
+
+        <h1>Download the App</h1>
+        <div class="app-store-boxes">
+            
+   <div class="app-box"><div class="get-it-on">Get it on</div>Google Play</div>
+            <div class="app-box">App Store</div>
+        </div>
+
+        <h1>Verified By</h1>
+        <div class="verified-boxes">
+            <div class="verified-box"><img src="v1.webp file.webp"  /></div>
+            <div class="verified-box"><img src="v2.webp file.webp" /></div>
+            <div class="verified-box"><img src="v3.webp file.webp" /></div>
+            <div class="verified-box"><img src="v4.webp file.webp"  /></div>
+        </div>
+    </div>
+<head>
+    <style>
+    footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #585656;
+    border-top: 1px solid #ddd;
+    color:white;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.footer-section h4 {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: hsl(200, 43%, 99%);
+}
+
+.footer-section h4:hover {
+    color: #007BFF; /* Change color on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+  </style>
+</head>
+<body>
+<footer>
+    <div class="footer-section">
+        <strong>CUSTOMER</strong>  
+        <h4>HELP/FAQS</h4></div>
+        <div class="footer-section">
+        <strong>TOP CATEGORIES</strong> 
+        <h4>MEN</h4> 
+        <h4>WOMEN</h4>
+        <h4>KIDS</h4>  
+        <h4>BEAUTY</h4> 
+        <h4>WATCHES</h4>  
+        <h4>GIFT</h4> 
+        <h4>HOME</h4>  
+        <h4>LUXE</h4>  
+        <h4>BARGAIN</h4>
+    </div>
+    <div class="footer-section">
+        <strong>STORE AND SITES</strong>  
+        <h4>ABOUT US</h4> 
+        <h4>CONTACT US</h4>  
+        <h4>CORPORATE SITE</h4>  
+        <h4>STORE LOCATOR</h4>  
+        <h4>CAREERS</h4>
+    </div>
+    <div class="footer-section">
+        <strong>POLICIES</strong> 
+        <h4>TERMS OF USE</h4>  
+        <h4>PRIVACY</h4> 
+        <h4>DELIVERY POLICY</h4>  
+        <h4>EXCHANGE & RETURN</h4>
+    </div>
+</footer>
+</body>
+  
+</html>
+
+    </body>
+
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+   </body></body></html></body></html></body></html>
